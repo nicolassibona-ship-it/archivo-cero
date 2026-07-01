@@ -1,4 +1,6 @@
 function Casos() {
+  const base = import.meta.env.BASE_URL;
+
   return (
     <main className="blog-page">
       <section className="container py-5">
@@ -13,7 +15,7 @@ function Casos() {
           <article className="col-md-8">
             <div className="blog-main-card">
               <img
-                src="/images/pasamano.png"
+                src={`${base}images/pasamano.png`}
                 alt="Intercambio de dinero"
                 className="img-fluid"
               />
@@ -62,7 +64,7 @@ function Casos() {
           <article className="col-md-4">
             <div className="case-card">
               <img
-                src="/images/encomienda.png"
+                src={`${base}images/encomienda.png`}
                 alt="Encomiendas Sucias"
                 className="img-fluid"
               />
@@ -72,7 +74,11 @@ function Casos() {
                 <p>
                   Una serie de paquetes sospechosos son enviados a diferentes
                   direcciones, conteniendo objetos que no deberían estar en
-                  circulación. Por otro lado se investiga la red de personas que se encargan de enviar estos paquetes, y se busca descubrir el modus operandi de la organización, podra la policía desmantelar la red y evitar que más paquetes peligrosos lleguen a su destino?
+                  circulación. Por otro lado se investiga la red de personas que
+                  se encargan de enviar estos paquetes, y se busca descubrir el
+                  modus operandi de la organización, podra la policía
+                  desmantelar la red y evitar que más paquetes peligrosos lleguen
+                  a su destino?
                 </p>
               </div>
             </div>
@@ -81,15 +87,20 @@ function Casos() {
           <article className="col-md-4">
             <div className="case-card">
               <img
-                src="/images/trata.png"
+                src={`${base}images/trata.png`}
                 alt="Operacion Libertad"
                 className="img-fluid"
               />
               <div className="case-content">
                 <span>Caso </span>
                 <h3>Operacion Libertad</h3>
-                <p>Una investigación sobre una red de trata de personas que opera bajo la oportunidad de obtener trabajo en bares y boliches de la ciudad, pero que en realidad es una fachada para la explotación de personas. La investigación busca desmantelar la red y rescatar a las víctimas, mientras se recopilan pruebas para llevar a los responsables ante la justicia
-                  .
+                <p>
+                  Una investigación sobre una red de trata de personas que opera
+                  bajo la oportunidad de obtener trabajo en bares y boliches de
+                  la ciudad, pero que en realidad es una fachada para la
+                  explotación de personas. La investigación busca desmantelar la
+                  red y rescatar a las víctimas, mientras se recopilan pruebas
+                  para llevar a los responsables ante la justicia.
                 </p>
               </div>
             </div>
@@ -98,7 +109,7 @@ function Casos() {
           <article className="col-md-4">
             <div className="case-card">
               <img
-                src="/images/investigacion.png"
+                src={`${base}images/investigacion.png`}
                 alt="Investigación"
                 className="img-fluid"
               />
@@ -106,7 +117,13 @@ function Casos() {
                 <span>Caso</span>
                 <h3>Los Edenes</h3>
                 <p>
-                  Una denuncia que llega a la unidad de investigaciones la cual indica la existencia de una banda inernacional asentada en la ciudad la cual se podria dedicar a el trafico de estupefacientes en la capital y sus alrededores , podra la unidad de investigaciones recopilar informacion suficiente para desmantelar la banda y llevar a los responsables ante la justicia?
+                  Una denuncia que llega a la unidad de investigaciones la cual
+                  indica la existencia de una banda inernacional asentada en la
+                  ciudad la cual se podria dedicar a el trafico de
+                  estupefacientes en la capital y sus alrededores, podra la
+                  unidad de investigaciones recopilar informacion suficiente para
+                  desmantelar la banda y llevar a los responsables ante la
+                  justicia?
                 </p>
               </div>
             </div>
