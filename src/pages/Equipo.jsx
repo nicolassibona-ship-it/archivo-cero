@@ -1,4 +1,6 @@
 function Equipo() {
+  const base = import.meta.env.BASE_URL;
+
   return (
     <main className="container py-5">
       <div className="text-center mb-5">
@@ -11,6 +13,7 @@ function Equipo() {
           investigado a fondo y presentado de manera clara y precisa. Trabajamos
           juntos para descubrir la verdad.
         </p>
+
         <p className="fs-4 fw-bold text-danger mt-4">
           "Solo la verdad nos hará libres"
         </p>
@@ -24,7 +27,7 @@ function Equipo() {
             </div>
 
             <img
-              src="/images/director.png"
+              src={`${base}images/director.png`}
               className="card-img-top"
               alt="Director"
             />
@@ -47,7 +50,7 @@ function Equipo() {
             </div>
 
             <img
-              src="/images/equipo.png"
+              src={`${base}images/equipo.png`}
               className="card-img-top"
               alt="Equipo"
             />
@@ -68,7 +71,7 @@ function Equipo() {
             </div>
 
             <img
-              src="/images/logistica.png"
+              src={`${base}images/logistica.png`}
               className="card-img-top"
               alt="Logística"
             />
