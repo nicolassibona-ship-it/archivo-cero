@@ -1,4 +1,13 @@
+import { useState } from "react";
+
 function Contacto() {
+  const [enviado, setEnviado] = useState(false);
+
+  const manejarEnvio = (event) => {
+    event.preventDefault();
+    setEnviado(true);
+  };
+
   return (
     <main className="contact-page">
       <section className="container py-5">
@@ -15,7 +24,7 @@ function Contacto() {
             <div className="contact-card">
               <h2 className="text-white mb-4">Enviar mensaje</h2>
 
-              <form>
+              <form onSubmit={manejarEnvio}>
                 <div className="mb-3">
                   <label className="form-label">Nombre completo</label>
                   <input
@@ -55,6 +64,13 @@ function Contacto() {
                 <button type="submit" className="btn btn-danger w-100">
                   Enviar información
                 </button>
+
+                {enviado && (
+                  <div className="contact-alert mt-4" role="status">
+                    Mensaje recibido. El equipo revisará la información y se
+                    comunicará si necesita más datos.
+                  </div>
+                )}
               </form>
             </div>
           </div>
@@ -84,7 +100,8 @@ function Contacto() {
               </p>
 
               <div className="contact-alert mt-4">
-              
+                Podés escribir con tranquilidad: los datos enviados se tratan de
+                forma reservada.
               </div>
             </div>
           </div>
